@@ -1,16 +1,16 @@
-// import { Injectable } from '@angular/core';
-// import { HttpClient } from '@angular/common/http';
-// // import 'rxjs/add/operator/map';
-// import { Observable } from 'rxjs';
-// import { Repository } from './repository';
-// import { rootRenderNodes } from '@angular/core/src/view';
-// import { environment } from 'src/environments/environment.prod';
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+// import 'rxjs/add/operator/map';
+import { Observable } from 'rxjs';
+import { Repository } from './repository';
+import { rootRenderNodes } from '@angular/core/src/view';
+import { environment } from 'src/environments/environment.prod';
 
-// @Injectable({
-//   providedIn: 'root'
-// })
+@Injectable({
+  providedIn: 'root'
+})
 
-// export class ProfileService {
+export class ProfileService {
   private username: string;
 
 
