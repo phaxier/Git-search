@@ -26,11 +26,11 @@ imports: [
     FormsModule
 
         
-//   ],
+  ],
 
-//   providers: [],
-//   bootstrap: [AppComponent],
+  providers: [],
+  bootstrap: [AppComponent],
 
-// })
+})
 
-// export class AppModule { }
+export class AppModule { }
