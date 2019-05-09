@@ -11,25 +11,25 @@
 // })
 
 // export class ProfileService {
-//   private username: string;
+  private username: string;
 
 
-//   constructor (private http: HttpClient) {
-//     this.username = 'phaxier';
-//   }
+  constructor (private http: HttpClient) {
+    this.username = 'phaxier';
+  }
 
-//   getUser():Observable<Repository[]> {
-//     return this.http.get<Repository[]>('http://api.github.com/users/' + this.username+'?access_token='+environment.apikey);
-//       // .map(res => res.json());
-//   }
+  getUser():Observable<Repository[]> {
+    return this.http.get<Repository[]>('http://api.github.com/users/' + this.username+'?access_token='+environment.apikey);
+      // .map(res => res.json());
+  }
 
-//   getRepos():Observable<Repository[]> {
-//       return this.http.get<Repository[]>('http://api.github.com/users/' + this.username + '/repos?access_token='+environment.apikey)
-//       // .map(res => res.json());
-//   }
+  getRepos():Observable<Repository[]> {
+      return this.http.get<Repository[]>('http://api.github.com/users/' + this.username + '/repos?access_token='+environment.apikey)
+      // .map(res => res.json());
+  }
 
-//   updateUser(username: string) {
-//       this.username = username;
-//   }
+  updateUser(username: string) {
+      this.username = username;
+  }
 
-// }
+}
